@@ -782,22 +782,27 @@
 	                    -->
 						
 
-						<form role="form" method="POST" action="http://formspree.io/tonyahu@yahoo.com"			  
+						<form role="form" method="POST" action="http://formspree.io/tonyahu@yahoo.com">
+						  
+
 						  	<div class="form-group">
 	                    		<label class="sr-only" for="contact-email">Email</label>
-	                        	<input type="email" name="email" placeholder="Your Email">
+	                        	<input type="email" name="email" placeholder="Your Email..." class="contact-email form-control" id="contact-email">
 	                        </div>
 						  
-						  
-						  <textarea name="message" placeholder="Your message"></textarea>
-						  <button type="submit">Send</button>
+						 	<div class="form-group">
+	                        	<label class="sr-only" for="contact-message">Message</label>
+	                        	<textarea name="message" placeholder="Your Message..." class="contact-message form-control" id="contact-message"></textarea>
+	                        </div>
+
+							
+	                        <button type="submit" class="btn">Send it!</button> 
+
 						</form>
 
 
 							<!--
 
-							
-							
 	                        <div class="form-group">
 	                        	<label class="sr-only" for="contact-subject">Subject</label>
 	                        	<input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
