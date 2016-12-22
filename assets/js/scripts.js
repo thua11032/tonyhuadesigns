@@ -72,43 +72,41 @@ jQuery(document).ready(function() {
 	/*
 	    Contact form
 	*/
-	$('.contact-form form input[type="text"], .contact-form form textarea').on('focus', function() {
-		$('.contact-form form input[type="text"], .contact-form form textarea').removeClass('contact-error');
-	});
-	$('.contact-form form').submit(function(e) {
+	var $contactForm = $('#contact-form');
+
+	$contactForm.submit(function(e) {
 		e.preventDefault();
-	    $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('contact-error');
-	    var postdata = $('.contact-form form').serialize();
-	    $.ajax({
-	        type: 'POST',
-	        url: 'assets/contact.php',
-	        data: postdata,
-	        dataType: 'json',
-	        success: function(json) {
-	            if(json.emailMessage != '') {
-	                $('.contact-form form .contact-email').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            			$(this).removeClass('animated shake');
-            		});
-	            }
-	            if(json.subjectMessage != '') {
-	                $('.contact-form form .contact-subject').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            			$(this).removeClass('animated shake');
-            		});
-	            }
-	            if(json.messageMessage != '') {
-	                $('.contact-form form textarea').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            			$(this).removeClass('animated shake');
-            		});
-	            }
-	            if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
-	                $('.contact-form form').fadeOut('fast', function() {
-	                    $('.contact-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
-	                });
-	            }
-	        }
-	    });
+		var $submit = $('input:submit', $contactForm);
+		var defaultSubmitText = $submit.val();
+
+		$.ajax({
+			url: '//formspree.io/tonyahu@yahoo.com',
+			method: 'POST',
+			data: $(this).serialize(),
+			dataType: 'json',
+			beforeSend: function() {
+				//$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+				$submit.attr('disabled', true).val('Sending message…');
+			},
+			success: function(data) {
+				//$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+				$submit.val('Message sent!');
+				setTimeout(function() {
+					//$('.alert--success').remove();
+					$submit.attr('disabled', false).val(defaultSubmitText);
+				}, 5000);
+			},
+			error: function(err) {
+				//$contactForm.find('.alert--loading').hide();
+				//$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+				$submit.val('Ops, there was an error.');
+				setTimeout(function() {
+					//$('.alert--error').remove();
+					$submit.attr('disabled', false).val(defaultSubmitText);
+				}, 5000);
+			}
+		});
 	});
-    
 });
 
 

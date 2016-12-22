@@ -775,51 +775,31 @@
 				
 				<div class="row">
 	            	<div class="col-sm-4 block-2-box block-2-left contact-form wow fadeInLeft">
-	            		
-						
+	 
 						<h3>Email me</h3>
-	                    <!--<form role="form" action="assets/contact.php" method="post">
-	                    -->
-						
-
-						<form role="form" method="POST" action="http://formspree.io/tonyahu@yahoo.com">
-						  
-
+						<form id="contact-form" method="POST" action="http://formspree.io/tonyahu@yahoo.com">
 						  	<div class="form-group">
+	                    		<label class="sr-only" for="contact-name">Name</label>
+	                        	<input type="text" name="Name" placeholder="Your Name..." class="contact-name form-control" id="contact-name">
+	                        </div>
+							
+							<div class="form-group">
 	                    		<label class="sr-only" for="contact-email">Email</label>
 	                        	<input type="text" name="email" placeholder="Your Email..." class="contact-email form-control" id="contact-email">
 	                        </div>
-						  
 						 	<div class="form-group">
 	                        	<label class="sr-only" for="contact-message">Message</label>
 	                        	<textarea name="message" placeholder="Your Message..." class="contact-message form-control" id="contact-message"></textarea>
 	                        </div>
-
+							
+							<!--optional-->
+							<input class="is-hidden" type="text" name="_gotcha">
+							<input type="hidden" name="_subject" value="Message from tonyhua.me">
+							
+							
 							
 	                        <button type="submit" class="btn">Send it!</button> 
-
 						</form>
-
-
-							<!--
-
-	                        <div class="form-group">
-	                        	<label class="sr-only" for="contact-subject">Subject</label>
-	                        	<input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
-	                        </div>
-	                        
-							
-							<div class="form-group">
-	                        	<label class="sr-only" for="contact-message">Message</label>
-	                        	<textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
-	                        </div>
-
-							
-	                        <button type="submit" class="btn">Send it</button>
-							
-							
-	                    </form>
-						-->
 	            	</div>
 					
 					
