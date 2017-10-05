@@ -1,817 +1,483 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="no-js">
     <head>
-
+        <!-- Basic Page Needs
+        ================================================== -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <title>Timer Agency Template</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tony Hua</title>
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="css/slider.css">
+        <!-- owl craousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        <!-- Template Javascript Files
+        ================================================== -->
+        <!-- modernizr js -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- owl carouserl js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- bootstrap js -->
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,400">        
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/elegant-font/code/style.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-		<link rel="stylesheet" href="assets/css/form-elements.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/media-queries.css">
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-
+        <script src="js/bootstrap.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- slider js -->
+        <script src="js/slider.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <!-- template main js -->
+        <script src="js/main.js"></script>
     </head>
-
     <body>
-    
-        <!-- Loader -->
-    	<div class="loader">
-    		<div class="loader-img"></div>
-    	</div>
-		
-		<!-- Top menu -->
-		<nav class="navbar navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">Tony's Portfolio</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="top-navbar-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a class="scroll-link" href="#top-content">Home</a></li>
-						<li><a class="scroll-link" href="#what-we-do">About</a></li>
-						<li><a class="scroll-link" href="#experience">Experience</a></li>
-						<li><a class="scroll-link" href="#portfolio">Portfolio</a></li>
-						<li><a class="scroll-link" href="#about">Skills & Hobbies</a></li>
-						<li><a class="scroll-link" href="#contact">Contact</a></li>
-	
-</div>
-		</nav>
-		
-        <!-- Page title -->
-        <div class="page-title top-content">
-            <div class="page-title-text wow fadeInUp">
-            	<h1>Tony Hua</h1>
-            	<p>Aspiring mechanical engineer, web developer, and entrepreneur. Take a look around to see what projects I've done and what services I can offer!</p>
-            	<div class="page-title-bottom-link">
-            		<a class="big-link-1 btn scroll-link" href="#contact">Contact me</a>
-            		<a class="big-link-2 btn scroll-link" href="#what-we-do">Learn more</a>
-            	</div>
+        <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+        <header id="top-bar" class="navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+                    
+                    <!-- logo -->
+                    <div class="navbar-brand">
+                        <a href="index.html" >
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- /logo -->
+                </div>
+                <!-- main menu -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <div class="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="index.html" >Home</a>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="service.html">Service</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="404.html">404 Page</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="blog-fullwidth.html">Blog Full</a></li>
+                                        <li><a href="blog-left-sidebar.html">Blog Left sidebar</a></li>
+                                        <li><a href="blog-right-sidebar.html">Blog Right sidebar</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /main nav -->
             </div>
-        </div>
-
-		<!-- What I do -->
-        <div class="block-3-container section-container what-we-do-container">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 block-3 section-description wow fadeIn">
-	                    <h2>My Story</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                    <p>
-	                    	Hello! My name is Tony Hua, I am a junior at Stanford University currently studying mechanical engineering. I look forward to working as a cognisant engineer at an automotive or tech company one day but in the meantime, here are just some of my interests:
-	                    </p>
-	                </div>
-	            </div>
-	            <div class="row">
-                	<div class="col-sm-3 block-3-box wow fadeInUp">
-	                	<div class="block-3-box-icon">
-	                		<span aria-hidden="true" class="icon_pencil"></span>
-	                	</div>
-	                    <h3>Maker</h3>
-	                    <p>From simple DIY crafts to satellite payloads bound for Mars, I really enjoy CAD designing and prototyping! I enjoy building and drawing my imagination.</p>
-                    </div>
-                    <div class="col-sm-3 block-3-box wow fadeInDown">
-	                	<div class="block-3-box-icon">
-	                		<span aria-hidden="true" class="icon_cogs"></span>
-	                	</div>
-	                    <h3>Designer</h3>
-	                    <p>Logos, videos, posters, and websites are just some of mediums I work on as a designer! Please feel free to contact me for rates and consultations!</p>
-                    </div>
-                    <div class="col-sm-3 block-3-box wow fadeInUp">
-	                	<div class="block-3-box-icon">
-	                		<span aria-hidden="true" class="social_twitter"></span>
-	                	</div>
-	                    <h3>Educator</h3>
-	                    <p>Computer literacy, financial literacy, mental wellness, college admissions advice. Those are just some of the subjects I teach!</p>
-                    </div>
-                    <div class="col-sm-3 block-3-box wow fadeInDown">
-	                	<div class="block-3-box-icon">
-	                		<span aria-hidden="true" class="icon_lightbulb"></span>
-	                	</div>
-	                    <h3>Explorer</h3>
-	                    <p>Life is never stagnant. It is dynamic and constantly evolving and so am I! I am always on the search for new activities, tastes, and sights!</p>
-                    </div>
-	            </div>
-				
-				
-	        </div>
-        </div>
+        </header>
         
-        <!-- Clients -->
-        <div class="clients-container section-container section-container-gray">
-        	<div class="container">
-        		<div class="row">
-					<div class="col-sm-12 our-motto section-description wow fadeInLeftBig">
-						<p>
-						<br>
-						<br>
-						</p>
-	            	</div>
-	            </div>
-        	</div>
-        </div>
-
-		
-		
-		
-		<!-- Block 2 Experience -->
-		<div class="block-3-container section-container experience-container">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 block-3 section-description wow fadeIn">
-	                    <h2>Experience</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                    <p>
-	                    	Over the years, I managed to work at some really cool places on some really cool projects! Take a look at some of my past jobs and projects below! Click them to learn more!
-	                    </p>
-	                </div>
-	            </div>
-			</div>
-		</div>
-		
-		<!-- NASA JPL -->
-        <div class="block-2-container section-container">
-	        <div class="container">
-	            <div class="row">
-	            	<div class="col-sm-6 block-2-box block-2-left block-2-media wow fadeInLeft">
-	            		<div class="block-2-img-container">
-	            			<img src="assets/img/about/jpl1.jpg" alt="" data-at2x="assets/img/about/jpl1.jpg">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>
-	            	<div class="col-sm-6 block-2-box block-2-right wow fadeInUp">	            		
-	            		<h3>NASA Jet Propulsion Laboratory</h3>
-	            		<p>
-	            			Origami inspired deployable solar arrays and a capture and sterilization system for a Mars Sample Return Mission, my internship experiences at JPL have been spectacular! For both projects, I was able to fully take control of the project from start to finish: design, prototype, test, design reviews, re-design, re-pitch, the list goes on. I definitely had fun and learned alot. 
-	            		</p>
-						<!-- insert lists here if needed -->
-	            	</div>
-	            </div>
-	        </div>
-        </div>
-        
-        <!-- OceanLab -->
-        <div class="block-2-container section-container section-container-gray">
-	        <div class="container">
-	            <div class="row">
-	            	<div class="col-sm-6 block-2-box block-2-left wow fadeInLeft">
-	            		<h3>OceanLab Autonomous Underwater Swarm Robotics</h3>
-	            		<p>
-	            			At a small startup located in Glendale, CA, I worked together with the team to develop new vehicles and swarming algorithms to further robotic swarm exploration of the ocean! My awesome summer experience allowed me to learn so much more about GPS locking, electronics breadboarding, arduino/python programming, environmental testing, and more! Amongst my contributions to the company's first product, I also designed and deployed my own floating water current and weather collection station! 
-	            		</p>
-						<!-- insert lists here if needed -->
-	            	</div>
-	            	<div class="col-sm-6 block-2-box block-2-right block-2-media wow fadeInUp">
-	            		<div class="block-2-img-container">
-	            			<img src="assets/img/about/swarmdiver.jpg" alt="" data-at2x="assets/img/about/swarmdiver.jpg">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>
-	            </div>
-	        </div>
-        </div>
-        
-		<!--Solar Boat-->
-        <div class="block-2-container section-container">
-	        <div class="container">
-	            <div class="row">
-	            	<div class="col-sm-6 block-2-box block-2-left block-2-media wow fadeInLeft">
-	            		<div class="block-2-img-container">
-	            			<img src="assets/img/about/solarboat3.jpg" alt="" data-at2x="assets/img/about/solarboat3.jpg">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>
-	            	<div class="col-sm-6 block-2-box block-2-right wow fadeInUp">	            		
-	            		<h3>National Solar Boat Competition Winner</h3>
-	            		<p>
-	            			"Why does that highschool have a boat and we don't!?!" That question led me to start my school's engineering club, which has since evolved into a full fledge engineering program with classes, guest speakers, field trips, and afterschool projects. From pieces of plywood, rolls of cables, sheets of mono-silicon solar cells, and 7 months of fundraising and building, my small team of highschool students designed and created the solar powered boat that won 1st place in our maiden year of competition. 
-	            		</p>
-	            	</div>
-	            </div>
-	        </div>
-        </div>
-
-        <!-- RCC -->
-        <div class="block-2-container section-container section-container-gray">
-	        <div class="container">
-	            <div class="row">
-	            	<div class="col-sm-6 block-2-box block-2-left wow fadeInLeft">
-	            		<h3>Stanford Residential Computer Consultant</h3>
-	            		<p>
-	            			While juggling classwork, freelancer projects, other personal engineering projects, extracurricular dance groups, and sleep, I am also a staff member of my dorm! My general work day may consist of network troubleshooting, computer and hardware fixing, assisting residents with general advice or labor, creating programming for dorm events and activities, keeping the dorm tidy and enjoyable, giving advice to freshmen and peers, and teaching weekly workshops on computer literacy and multimedia production! I also enjoy just being a friendly person that anyone can come talk to and grab snacks from!
-	            		</p>
-	            	</div>
-	            	<div class="col-sm-6 block-2-box block-2-right block-2-media wow fadeInUp">
-	            		<div class="block-2-img-container">
-	            			<img src="assets/img/about/rcc4.JPG" alt="" data-at2x="assets/img/about/rcc4.JPG">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>
-	            </div>
-	        </div>
-        </div>
-		
-        <!-- Counters -->
-        <div class="counters-container section-container section-container-full-bg">
-        	<div class="container">
-        		<div class="row">
-	            	<div class="col-sm-3 counter-box wow fadeInUp">
-                    	<h4 data-from="0" data-to="206">0</h4>
-                    	<p>Computer/Technology Issues Resolved</p>
-	            	</div>
-	            	<div class="col-sm-3 counter-box wow fadeInDown">
-                    	<h4 data-from="0" data-to="34">0</h4>
-                    	<p>Engineering Projects Completed</p>
-	            	</div>
-	            	<div class="col-sm-3 counter-box wow fadeInUp">
-                    	<h4 data-from="0" data-to="492">0</h4>
-                    	<p>Graphics and Logos Designed</p>
-	            	</div>
-	            	<div class="col-sm-3 counter-box wow fadeInDown">
-                    	<h4 data-from="0" data-to="100">0</h4>
-                    	<p>Client Satisfaction</p>
-	            	</div>
-	            </div>
-        	</div>
-        </div>
-        
-        <!-- Portfolio -->
-        <div class="portfolio-container section-container">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 portfolio section-description wow fadeIn">
-	                	<h2>My portfolio</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                    <p>
-	                    	Some things in life are just too awesome to be described with words. Even pictures cannot compare to the real thing but that is the best I can do now. Please take your time to scroll through all my cool endeavours and experiences through the years! My experiences in work, school, and life are highlighted in one place. Feel free to click on them to learn more!
-	                    </p>
-	                </div>
-	            </div>
-	            <div class="row">
-	            	<div class="col-sm-12 portfolio-filters wow fadeInUp">
-	            		<a href="#" class="filter-all active">All</a> / 
-	            		<a href="#" class="filter-engineering">Engineering</a> / 
-	            		<a href="#" class="filter-design">Design</a> / 
-	            		<a href="#" class="filter-life">Life</a>
-	            	</div>
-	            </div>
-	            <div class="row">
-	            	<div class="col-sm-12 portfolio-masonry">
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/btc.jpg" alt="" data-at2x="assets/img/portfolio/btc.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>NASA MSR Capture and Sterilization</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box design">
-		                	<img src="assets/img/portfolio/cad-bistable.jpg" alt="" data-at2x="assets/img/portfolio/cad-bistable.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Bistable Bearing Active Preload System</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/SolarBoat.jpg" alt="" data-at2x="assets/img/portfolio/SolarBoat.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>1st Place Solar Boat!</p>
-		                		</div>
-		                	</div>
-		                </div>							
-		                <div class="portfolio-box design">
-		                	<img src="assets/img/portfolio/CAD-CircularTruss.jpg" alt="" data-at2x="assets/img/portfolio/CAD-CircularTruss.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Circular Truss Design</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box design">
-		                	<img src="assets/img/portfolio/cad-hexfoil.jpg" alt="" data-at2x="assets/img/portfolio/cad-hexfoil.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Monolithic Bistable HexFoil Spring</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box life">
-		                	<img src="assets/img/portfolio/Donuts.jpg" alt="" data-at2x="assets/img/portfolio/Donuts.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Food Photography!</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/DataDiver.jpeg" alt="" data-at2x="assets/img/portfolio/DataDiver.jpeg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Swarm Robotics Data Diver</p>
-		                		</div>
-		                	</div>
-		                </div>								
-		                <div class="portfolio-box life">
-		                	<img src="assets/img/portfolio/DoorOfHope.jpg" alt="" data-at2x="assets/img/portfolio/DoorOfHope.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Built a home for the homeless!</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/EmbeddedHotWire.JPG" alt="" data-at2x="assets/img/portfolio/EmbeddedHotWire.JPG">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Wire Embedded Heating Plate</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/HeatingPlate.JPG" alt="" data-at2x="assets/img/portfolio/HeatingPlate.JPG">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Heating Plate Assembly</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/LedCube.png" alt="" data-at2x="assets/img/portfolio/LedCube.png">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Music Reactive LED Cube</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box life">
-		                	<img src="assets/img/portfolio/LionDance.jpg" alt="" data-at2x="assets/img/portfolio/LionDance.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Inaugural Lion Dance Performance!</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box life">
-		                	<img src="assets/img/portfolio/LionHead.jpg" alt="" data-at2x="assets/img/portfolio/LionHead.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Building my bamboo lion head</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/NASAOrigamiArray.jpg" alt="" data-at2x="assets/img/portfolio/NASAOrigamiArray.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Deployable Origami Solar Array!</p>
-		                		</div>
-		                	</div>
-		                </div>
-						
-						<!-- cut off -->
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/NEMRelay.jpg" alt="" data-at2x="assets/img/portfolio/NEMRelay.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Tungten Carbide Coated NEM Relay</p>
-		                		</div>
-		                	</div>
-		                </div>						
-		                <div class="portfolio-box design">
-		                	<img src="assets/img/portfolio/OrigamiMiura.jpg" alt="" data-at2x="assets/img/portfolio/OrigamiMiura.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Miura Ori Origami Fold</p>
-		                		</div>
-		                	</div>
-		                </div>						
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/OrigamiTonyArray.jpg" alt="" data-at2x="assets/img/portfolio/OrigamiTonyArray.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Deployable Origami Solar Array!</p>
-		                		</div>
-		                	</div>
-		                </div>						
-		                <div class="portfolio-box design">
-		                	<img src="assets/img/portfolio/OrigamiTurtle.jpg" alt="" data-at2x="assets/img/portfolio/OrigamiTurtle.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Single Sheet Origami Turtle</p>
-		                		</div>
-		                	</div>
-		                </div>
-		                <div class="portfolio-box design">
-		                	<img src="assets/img/portfolio/Samsung_gs5.png" alt="" data-at2x="assets/img/portfolio/Samsung_gs5.png">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Samsung Galaxy S5 Draft</p>
-		                		</div>
-		                	</div>
-		                </div>			
-		                <div class="portfolio-box design">
-		                	<img src="assets/img/portfolio/SundaeCarDesign.jpg" alt="" data-at2x="assets/img/portfolio/SundaeCarDesign.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Solar Car CFD Analysis</p>
-		                		</div>
-		                	</div>
-		                </div>		
-		                <div class="portfolio-box engineering">
-		                	<img src="assets/img/portfolio/SwarmTesting.jpg" alt="" data-at2x="assets/img/portfolio/SwarmTesting.jpg">
-		                	<div class="portfolio-box-text-container">
-		                		<div class="portfolio-box-text">
-		                			<p>Swarm Algorithm Testing w/ Proxy</p>
-		                		</div>
-		                	</div>
-		                </div>													
-	                </div>
-	            </div>
-	        </div>
-        </div>
-        
-
-<!--
-		//Quote
-        <div class="our-motto-container section-container section-container-full-bg">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 our-motto section-description wow fadeInLeftBig">
-	                    <p>
-	                    	"Be the change that you want to see in the world. Do not wait for others to do it."
-	                    </p>
-	                    <div class="our-motto-author">Jihyeon Lee</div>
-	                </div>
-	            </div>
-	        </div>
-        </div>
-
-
-        //Testimonials
-        <div class="testimonials-container section-container section-container-gray">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-8 testimonials section-description wow fadeInLeft">
-	                    <h3>Recommendations </h3>
-	                    <div class="testimonial-active"></div>
-	                    <div class="testimonial-single">
-	                    	<p>
-	                    		Tony Hua, one of the most accomplished students I have had the pleasure to work with in my 27 year teaching career.
-								He is an agent of change, well known for his initiative and industry. 
-								He focuses his intellect and creative energy on practicing engineering and promoting an engineering culture at school.
-	                    		<br>
-	                    		<a href="">Dolores Bravo, Science Teacher at SEMHS</a>
-	                    	</p>
-	                    	<div class="testimonial-single-image">
-	                    		<img src="assets/img/testimonials/1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
-	                    	</div>
-	                    </div>
-	                    <div class="testimonial-single">
-	                    	<p>
-	                    		Tony is my first high school student, he is exceptional and surpasses nearly all of my previous undergraduate and even graduate students. 
-								I’ve always said that “interns are interns” and are of course not yet fully-trained with a technical background in engineering; 
-								instead, what matters most is initiative and aptitude. Tony proved to be a prime possessor of both these qualities.
-	                    		<br>
-	                    		<a href="">Brian Trease, Senior Mechanical Engineer at NASA JPL</a>
-	                    	</p>
-	                    	<div class="testimonial-single-image">
-	                    		<img src="assets/img/testimonials/2.jpg" alt="" data-at2x="assets/img/testimonials/2.jpg">
-	                    	</div>
-	                    </div>
-	                    <div class="testimonial-single">
-	                    	<p>
-	                    		tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba
-								tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba tba
-	                    		<br>
-	                    		<a href="">Morgan Hendry, Mechanical Engineer at NASA JPL</a>
-	                    	</p>
-	                    	<div class="testimonial-single-image">
-	                    		<img src="assets/img/testimonials/3.jpg" alt="" data-at2x="assets/img/testimonials/3.jpg">
-	                    	</div>
-	                    </div>
-	                    <div class="testimonial-single">
-	                    	<p>
-	                    		I’ve had many opportunities to work closely with Tony in various capacities and he has been one of my best students in the twenty years I’ve been teaching.  
-								He has demonstrated that he is intelligent, hard working, committed to his community, and especially, his education.
-	                    		<br>
-	                    		<a href="">Javier Solorzano, Engineering Teacher at SEMHS</a>
-	                    	</p>
-	                    	<div class="testimonial-single-image">
-	                    		<img src="assets/img/testimonials/4.jpg" alt="" data-at2x="assets/img/testimonials/4.jpg">
-	                    	</div>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="testimonials-icon-container">
-            		<span aria-hidden="true" class="icon_chat"></span>
-            	</div>
-	        </div>
-        </div>
--->
- 
-        <!-- Call to action -->
-        <div class="call-to-action-container section-container section-container-full-bg">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 call-to-action section-description wow fadeInLeftBig">
-	                    <p>
-	                    	Interested in learning more? Contact me today!
-	                    </p>
-	                </div>
-	            </div>
-	            <div class="row">
-                    <div class="col-sm-12">
-                        <div class="section-bottom-link wow fadeInUp">
-                        	<a class="big-link-1 btn scroll-link" href="#contact">Contact me!</a>
+        <!--
+        ==================================================
+        Slider Section Start
+        ================================================== -->
+        <section id="hero-area" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="block wow fadeInUp" data-wow-delay=".3s">
+                            
+                            <!-- Slider -->
+                            <section class="cd-intro">
+                                <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                                <span>HI, MY NAME IS JONATHON & I AM A</span><br>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">DESIGNER</b>
+                                    <b>DEVELOPER</b>
+                                    <b>FATHER</b>
+                                </span>
+                                </h1>
+                                </section> <!-- cd-intro -->
+                                <!-- /.slider -->
+                                <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
+                                    With 10 years experience, I've occupied many roles including digital design director,<br> web designer and developer. This site showcases some of my work.
+                                </h2>
+                                <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works" >View Works</a>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
-	        </div>
-        </div>
-        
-        <!-- skills and hobbies  -->
-        <div class="about-container section-container">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 about section-description wow fadeIn">
-	                    <h2>Skills and Hobbies</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                    <p>
-	                    	In addition to being a student at school studying or interning at companies, I also enjoy various other activities in my free time. My skills and hobbies are collected down below!
-	                    </p>
-	                </div>
-	            </div>
-	        </div>
-        </div>
-        
-
-		
-		
-		
-        <!-- skills 1: Mechanical -->
-        <div class="block-2-container section-container about-block-2-container">
-	        <div class="container">
-	            <div class="row">
-	            	<div class="col-sm-4 block-2-box block-2-left block-2-media wow fadeInLeft">
-	            		<div class="block-2-img-container">
-	            			<img src="assets/img/about/mechanical.jpg" alt="" data-at2x="assets/img/about/mechanical.jpg">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>
-	            	<div class="col-sm-8 block-2-box block-2-right wow fadeInUp">
-	            		<h3>Mechanical Design/ <span>Prototyping</span></h3>
-	            		<p>
-	            			Mechanical design is my speciality! Ask me to draft a part or do stress analysis for another and I will deliver! Some of the software packages that I use include: SolidWorks, NX Unigraphics, Autodesk Inventor, AutoCAD, AutoCAD Electrical, Revit, ProE/Creo Parametric, Coventor, CADSoft EAGLE PCB design, Pepakura Designer, Google SketchUp, and more! I am also learning many new ones including Catia, Maya, Blender, and Rhinoceros. 
-	            		</p>
-	            		<p>
-	            			In addition to computer modelling, I am also well versed in prototyping/manufacturing processes. I can use CNC machines, saws, lathes, drills, sanders and more to fashion wood. I can cut, bend, and weld metal and plastics. I am also superb at 3D printing and laser cutting. I've done composite layering and forming, worked with surface protectants, and more. The list is endless and ever growing! 
-						</p>
-	            	</div>
-	            </div>
-	        </div>
-        </div>
-        
-        <!-- skills 2: Electrical -->
-        <div class="block-2-container section-container section-container-gray about-block-2-container">
-	        <div class="container">
-	            <div class="row">
-	            	<div class="col-sm-8 block-2-box block-2-left wow fadeInLeft">
-	            		<h3>Electronic Design / <span>Repairs/</span> <span>Debugging</span></h3>
-	            		<p>
-	            			Since middle school, I have also hacked and worked with electronics of all kinds. From broken television sets
-							to old desktop computers, I've taken them apart and fixed them up again, even those covered in rust. I build high end gaming computers for clients and now work as a tech consultant, network manager, and educator for Stanford's academic computing department. 
-						</p>
-						<p>
-							Delving deeper in electronics, I also do PCB design and etching. I am proficient in probing connections and debugging circuits, soldering and splicing connections together when necessary. 
-	            		</p>
-					</div>
-					
-					<div class="col-sm-4 block-2-box block-2-right block-2-media wow fadeInUp">
-	            		<div class="block-2-img-container">
-	            			<img src="assets/img/about/electrical.jpg" alt="" data-at2x="assets/img/about/electrical.jpg">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>
-					
-					
-	            </div>
-	        </div>
-        </div>
-        
-        <!-- skills3: Software -->
-        <div class="block-2-container section-container about-block-2-container">
-	        <div class="container">
-	            <div class="row">
-	            	<div class="col-sm-4 block-2-box block-2-left block-2-media wow fadeInLeft">
-	            		<div class="block-2-img-container">
-	            			<img src="assets/img/about/software.jpg" alt="" data-at2x="assets/img/about/software.jpg">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>
-	            	<div class="col-sm-8 block-2-box block-2-right wow fadeInUp">
-	            		<h3>Software Design / <span>Web Development</span></h3>
-	            		<p>
-	            		Autonomous robots, autonomous cars, autonomous machine learning; the same could be said about my drive to learn software! I am a fast and driven learner when it comes to software and can easily pick up languages and methods as I go. My past experiences in JAVA, C/C++, Python, Perl, Unix, Arduino, Android, HTML, CSS, Javascript, PHP, Matlab, etc have given me enough knowledge to make my own videogame, an automated testbed for students, multiplexing music reactive LED lightshows, an electro-cardiogram, and even this website! The idea of IOT amazes me and I want nothing more than to help contribute to the growing field that will be the future of our society.
-	            		</p>
-	            	</div>
-	            </div>
-	        </div>
-        </div>
- 
-         <!-- skills4 -->
-        <div class="block-2-container section-container section-container-gray about-block-2-container">
-	        <div class="container">
-	            <div class="row">
-	            	<div class="col-sm-8 block-2-box block-2-left wow fadeInLeft">
-	            		<h3>Graphic Design</h3>
-	            		<p>
-	            			From large New Year's Festivals to clinics and small businesses, I have performed freelance logo and flyer designs for various clients. I've also managed Facebook marketing and advertising for numerous events and spearheaded event promotions from physical brochures, flyers, and pamphlets to digital media including flyers and promotional videos. Using a combination of Adobe Illustrator and Photoshop, I deliver high resolution vector images that can scale to whatever your needs are. With a professional look and feel, I can assure you more customers and traffic to whatever occasion you are hosting! 
-	            		</p>
-	            	</div>
-					
-					
-					<div class="col-sm-4 block-2-box block-2-right block-2-media wow fadeInUp">
-	            		<div class="block-2-img-container">
-	            			<img src="assets/img/about/graphic.jpg" alt="" data-at2x="assets/img/about/graphic.jpg">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>					
-					
-	            </div>
-	        </div>
-        </div>
-
-		
-        <!-- skills5 -->
-        <div class="block-2-container section-container about-block-2-container">
-	        <div class="container">
-	            <div class="row">
-	            	<div class="col-sm-4 block-2-box block-2-left block-2-media wow fadeInLeft">
-	            		<div class="block-2-img-container">
-	            			<img src="assets/img/about/photo.jpg" alt="" data-at2x="assets/img/about/photo.jpg">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>
-	            	<div class="col-sm-8 block-2-box block-2-right wow fadeInUp">
-	            		<h3>Photography / <span>Videography</span></h3>
-	            		<p>
-	            			When I have free time, photography and videography is also one of my many interests! Starting with just food photography on Instagram, I've continued teaching myself different techniques and editing packages to produce high quality content. I am excellent when it comes to post production editing with Adobe Photoshop, Lightroom, After Effects, and Premier. Feel free to contact me about your next project and I can be your guy!
-	            		</p>
-	            	</div>
-	            </div>
-	        </div>
-        </div>
-		<!-- Contact us -->
-        <div class="block-2-container section-container contact-container">
-	        <div class="container">
-	            
-				
-				<div class="row">
-	                <div class="col-sm-12 block-2 section-description wow fadeIn">
-	                	<h2>Contact me</h2>
-	                	<div class="divider-1 wow fadeInUp"><span></span></div>
-	                    <p>
-	                    	For every question, information or just to say "Hi", here is how you can get in touch with me. Send me an email or postcard!
-	                    </p>
-	                </div>
-	            </div>
-	            
-				
-				<div class="row">
-	            	<div class="col-sm-4 block-2-box block-2-left contact-form wow fadeInLeft">
-	 
-						<h3>Email me</h3>
-						<form id="contact-form" method="POST" action="http://formspree.io/tonyahu@yahoo.com">
-						  	<div class="form-group">
-	                    		<label class="sr-only" for="contact-name">Name</label>
-	                        	<input type="text" name="Name" placeholder="Your Name..." class="contact-name form-control" id="contact-name">
-	                        </div>
-							
-							<div class="form-group">
-	                    		<label class="sr-only" for="contact-email">Email</label>
-	                        	<input type="text" name="email" placeholder="Your Email..." class="contact-email form-control" id="contact-email">
-	                        </div>
-						 	<div class="form-group">
-	                        	<label class="sr-only" for="contact-message">Message</label>
-	                        	<textarea name="message" placeholder="Your Message..." class="contact-message form-control" id="contact-message"></textarea>
-	                        </div>
-							
-							<!--optional-->
-							<input type="hidden" name="_subject" value="Message from tonyhua.me">
-							
-							
-							
-	                        <button type="submit" class="btn">Send it!</button> 
-						</form>
-	            	</div>
-					
-					
-					
-	            	<div class="col-sm-4 block-2-box block-2-right contact-address wow fadeInUp">
-	            		<h3>Snail Mail me</h3>
-	                    <p><span aria-hidden="true" class="icon_pin"></span>P.O. Box 17742, Stanford, CA</p>
-	                    <p><span aria-hidden="true" class="icon_phone"></span>Phone: 626 478 6241</p>
-	                    <p><span aria-hidden="true" class="icon_mail"></span>Email: <a href="">thua@stanford.edu</a></p>
-	            	</div>
-					
-					
-	            </div>
-	            <div class="contact-icon-container">
-            		<span aria-hidden="true" class="icon_mail"></span>
-            	</div>
-	        </div>
-        </div>
-
-        <!-- Footer -->
-        <footer>
-	        <div class="container">
-	        	<div class="row">
-		        	<div class="col-sm-12">
-		        		<div class="scroll-to-top">
-		        			<a href="#"><i class="fa fa-chevron-up"></i></a>
-		        		</div>
-		        	</div>
-		        </div>
-	            <div class="row">
-                    <div class="col-sm-7 footer-copyright">
-                    	Thank you for visiting!
+            </section><!--/#main-slider-->
+            <!--
+            ==================================================
+            Slider Section Start
+            ================================================== -->
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <h2>
+                                ABOUT ME
+                                </h2>
+                                <p>
+                                    Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <img src="images/about/about.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-5 footer-social">
-                    	<a href="https://www.facebook.com/tony11032"><i class="fa fa-facebook"></i></a>
-						<a href="https://www.instagram.com/tony11032"><i class="fa fa-instagram"></i></a>
-						<a href="https://www.linkedin.com/in/thua1"><i class="fa fa-linkedin"></i></a>
-	                    <a href="https://www.youtube.com/tony11032"><i class="fa fa-youtube"></i></a>
+                </div>
+            </section> <!-- /#about -->
+            <!--
+            ==================================================
+            Portfolio Section Start
+            ================================================== -->
+            <section id="works" class="works">
+                <div class="container">
+                    <div class="section-heading">
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Latest Works</h1>
+                        <p class="wow fadeInDown" data-wow-delay=".5s">
+                            Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+                        </p>
                     </div>
-	            </div>
-	        </div>
-        </footer>
-        
-
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/retina-1.1.0.min.js"></script>
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/waypoints.min.js"></script>
-        <script src="assets/js/jquery.countTo.js"></script>
-        <script src="assets/js/masonry.pkgd.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
-        
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
-
-    </body>
-
-</html>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item-1.jpg" class="img-responsive" alt="this is a title" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-1.jpg">Demo</a>
+                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#">
+                                    Dew Drop
+                                </a>
+                                </h4>
+                                <p>
+                                    Redesigne UI Concept
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item-2.jpg" class="img-responsive" alt="this is a title" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-2.jpg">Demo</a>
+                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#">
+                                    Bottle Mockup
+                                </a>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit.
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item-3.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-3.jpg">Demo</a>
+                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#">
+                                    Table Design
+                                </a>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item-4.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-4.jpg">Demo</a>
+                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#">
+                                    Make Up elements
+                                </a>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor.
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item-5.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-5.jpg">Demo</a>
+                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#">
+                                    Shoping Bag Concept
+                                </a>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor.
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item-6.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-6.jpg">Demo</a>
+                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#">
+                                    Caramel Bottle
+                                </a>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor.
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- #works -->
+            <!--
+            ==================================================
+            Portfolio Section Start
+            ================================================== -->
+            <section id="feature">
+                <div class="container">
+                    <div class="section-heading">
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Offer From Me</h1>
+                        <p class="wow fadeInDown" data-wow-delay=".5s">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,<br> quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-flask-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-lightbulb-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Well documented.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-lightbulb-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Well documented.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-americanfootball-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Free updates</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-keypad-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Solid Support</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-barcode-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Simple Installation</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- /#feature -->
+                            
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
+                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <!--
+            ==================================================
+            Footer Section Start
+            ================================================== -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="col-md-8">
+                        <p class="copyright">Copyright: <span>2015</span> . Design and Developed by <a href="http://www.Themefisher.com">Themefisher</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Social Media -->
+                        <ul class="social">
+                            <li>
+                                <a href="http://wwww.fb.com/themefisher" class="Facebook">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wwww.twitter.com/themefisher" class="Twitter">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="Linkedin">
+                                    <i class="ion-social-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wwww.fb.com/themefisher" class="Google Plus">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer> <!-- /#footer -->
+                
+        </body>
+    </html>
