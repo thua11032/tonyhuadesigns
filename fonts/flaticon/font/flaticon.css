@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 17/01/2018 04:05
+  	Creation date: 22/05/2018 03:49
   	*/
 
 @font-face {
@@ -24,14 +24,17 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-  font-style: normal;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
 }
 
-.flaticon-worker:before { content: "\f100"; }
-.flaticon-architect-with-helmet:before { content: "\f101"; }
-.flaticon-sketch:before { content: "\f102"; }
-.flaticon-conveyor:before { content: "\f103"; }
-.flaticon-skyline:before { content: "\f104"; }
-.flaticon-crane:before { content: "\f105"; }
-.flaticon-engineering:before { content: "\f106"; }
-.flaticon-engineer:before { content: "\f107"; }
+.flaticon-bank:before { content: "\f100"; }
+.flaticon-dart:before { content: "\f101"; }
+.flaticon-career:before { content: "\f102"; }
+.flaticon-lightbulb:before { content: "\f103"; }
+.flaticon-pie-chart:before { content: "\f104"; }
+.flaticon-trophy:before { content: "\f105"; }
+.flaticon-money:before { content: "\f106"; }
+.flaticon-handshake:before { content: "\f107"; }
+.flaticon-presentation:before { content: "\f108"; }

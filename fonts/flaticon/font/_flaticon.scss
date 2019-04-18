@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 17/01/2018 04:05
+    Creation date: 22/05/2018 03:49
     */
 
     @font-face {
@@ -36,20 +36,22 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-worker:before { content: "\f100"; }
-.flaticon-architect-with-helmet:before { content: "\f101"; }
-.flaticon-sketch:before { content: "\f102"; }
-.flaticon-conveyor:before { content: "\f103"; }
-.flaticon-skyline:before { content: "\f104"; }
-.flaticon-crane:before { content: "\f105"; }
-.flaticon-engineering:before { content: "\f106"; }
-.flaticon-engineer:before { content: "\f107"; }
+    .flaticon-bank:before { content: "\f100"; }
+.flaticon-dart:before { content: "\f101"; }
+.flaticon-career:before { content: "\f102"; }
+.flaticon-lightbulb:before { content: "\f103"; }
+.flaticon-pie-chart:before { content: "\f104"; }
+.flaticon-trophy:before { content: "\f105"; }
+.flaticon-money:before { content: "\f106"; }
+.flaticon-handshake:before { content: "\f107"; }
+.flaticon-presentation:before { content: "\f108"; }
     
-    $font-Flaticon-worker: "\f100";
-    $font-Flaticon-architect-with-helmet: "\f101";
-    $font-Flaticon-sketch: "\f102";
-    $font-Flaticon-conveyor: "\f103";
-    $font-Flaticon-skyline: "\f104";
-    $font-Flaticon-crane: "\f105";
-    $font-Flaticon-engineering: "\f106";
-    $font-Flaticon-engineer: "\f107";
+    $font-Flaticon-bank: "\f100";
+    $font-Flaticon-dart: "\f101";
+    $font-Flaticon-career: "\f102";
+    $font-Flaticon-lightbulb: "\f103";
+    $font-Flaticon-pie-chart: "\f104";
+    $font-Flaticon-trophy: "\f105";
+    $font-Flaticon-money: "\f106";
+    $font-Flaticon-handshake: "\f107";
+    $font-Flaticon-presentation: "\f108";
